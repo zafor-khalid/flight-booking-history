@@ -1,0 +1,26 @@
+#breadcrumb {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  list-style: none;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  color: #5A6573;
+  cursor: pointer;
+  margin-right: 8px; 
+  font-size: 13px;
+}
+
+.breadcrumb-item:last-child {
+  color: #007bff; 
+  font-weight: 600;
+  :after {
+    content: none; 
+  }
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: url("/assets/icons/right-arrow.png");
+  margin-left: 8px; 
+}
